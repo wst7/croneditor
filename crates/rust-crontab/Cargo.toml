@@ -1,6 +1,6 @@
 [package]
 name = "rust-crontab"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = [ "wstreet7 <wstreet7@outlook.com>" ]
 description = "a crate for croneditor, which can read and write crontab"

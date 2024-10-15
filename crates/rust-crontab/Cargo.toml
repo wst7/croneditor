@@ -1,0 +1,10 @@
+[package]
+name = "rust-crontab"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tempfile = "3.3" 
+mockall = "0.11"
+assert_cmd = "2.0"
+serde = { version = "1.0", features = ["derive"] }

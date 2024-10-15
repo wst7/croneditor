@@ -65,7 +65,7 @@ impl Crontab {
 
     pub fn save(&mut self, jobs: Vec<CronJob>) -> Result<(), String> {
         // Convert the jobs into a Vec<String>
-        let lines: Vec<String> = jobs.iter().map(|job| job.render()).collect();
+        let lines: Vec<String> = jobs.iter().map(|job| job.to_string()).collect();
         self.lines = lines.clone();
         // Join the lines into a single string
         let lines = lines.join("\n");

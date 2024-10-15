@@ -59,7 +59,7 @@ impl CronJob {
         self
     }
 
-    pub fn render(&self) -> String {
+    fn render(&self) -> String {
         let mut job = format!("{} {}", self.cron, self.command);
         let comment = self.comment.clone().unwrap();
         // If there is a comment, append it with a leading `#`
@@ -71,6 +71,10 @@ impl CronJob {
         }
 
         job
+    }
+
+    pub fn to_string(&self) -> String {
+        self.render()
     }
 }
 

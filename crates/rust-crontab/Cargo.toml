@@ -5,7 +5,7 @@ edition = "2021"
 authors = [ "wstreet7 <wstreet7@outlook.com>" ]
 description = "a crate for croneditor, which can read and write crontab"
 readme = "README.md"
-homepage = "https://github.com/wstreet/croneditor"
+repository = "https://github.com/wstreet/croneditor"
 keywords = [ "crontab", "cron", "editor" ]
 license = "MIT OR Apache-2.0"
 
